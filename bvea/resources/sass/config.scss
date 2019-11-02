@@ -1,0 +1,52 @@
+$mainColor1 : #ffe600;
+$mainColor2 : #003768;
+$sectionPadding: 80px;
+$logoSize : 72px;
+$fontSize: 18px;
+
+$fontSlideSize: 60px;
+
+$titre1: 2.5rem;
+
+
+$fontSize2: 1.2em;
+
+* {
+    background-size: cover !important;
+}
+
+@mixin backImg($img) {
+    background: url($img);
+    background-size: cover;
+}
+
+@mixin degrade($color: black, $origin: bottom) {
+    width: 100% !important;
+
+    @if $origin == bottom {
+        background: -moz-linear-gradient(bottom, $color, 40%, transparent);
+        background: -webkit-linear-gradient(bottom, $color, 40%, transparent);
+        background: linear-gradient(to top, $color, 40%, transparent);
+    } @else {
+        background: -moz-linear-gradient(top, $color, 60%, transparent);
+        background: -webkit-linear-gradient(top, $color, 60%, transparent);
+        background: linear-gradient(to bottom, $color, 60%, transparent);
+    }
+     
+}
+
+
+@mixin myCardDegrade($color: black) {
+        padding-bottom: 3% !important;
+        padding-left: 3% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include degrade($color);
+}
+

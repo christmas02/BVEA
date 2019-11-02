@@ -1,0 +1,1666 @@
+@import 'config';
+
+body {
+    font-size: $fontSize;
+}
+
+
+
+
+.blueBtn {
+    background: $mainColor2 !important;
+    color: white !important;
+    border-radius: 60px;
+}
+
+.blueBtn:hover {
+    color: $mainColor2 !important;
+    background: white !important;
+}
+
+.newsCard {
+    background: #f2f0f1;
+    margin-top: 40px;
+
+    .image {
+        height: 250px;
+        background-size: cover;
+    }
+
+    .text {
+        height: 300px;
+        padding: 16px;
+        // height: 50%;
+    }
+
+    a.read {
+        padding-top: 15px; 
+        padding-bottom: 15px; 
+        width: 80% !important;
+        color: $mainColor2 !important;
+        border-radius: 25px;
+        border: 1px solid $mainColor2 !important;
+
+        &:hover {
+            background: $mainColor2 !important;
+            color: white !important;
+        }
+    }
+
+
+}
+
+
+.reste {
+    position: relative;
+    z-index: 2;
+}
+
+.textSize2 {
+    font-size: $fontSize2;
+}
+
+.titre1 {
+    font-size: $titre1;
+}
+
+p.titre1 {
+    line-height: 44px;
+}
+
+.fontSlide {
+    font-size: $fontSlideSize;
+}
+
+//general
+
+
+header:not(.withoutHeading) {
+    height: 800px;
+}
+
+header.withoutHeading {
+
+   background: white;
+   * {
+    color: black !important;
+    }
+}
+
+header {
+    width: inherit !important;
+    position: relative;
+
+    .btnJumbotron {
+        padding: 10px 10px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 20%;
+        border-radius: 50% !important;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 12px 23px !important;
+    }
+    .btnJumbotron:hover {
+        background: $mainColor2 !important; 
+        border-color: $mainColor2 !important;
+        color: $mainColor1 !important;
+    }
+
+    .one {
+        @include backImg('../images/IMG-BVEA/heade-img.png');
+    }
+
+    * {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .btn {
+        font-weight: bold;
+        border-radius: 20px !important;
+        padding: 5px 20px !important;
+        text-transform: uppercase;
+    }
+
+    .jumbotron {
+        *:not(a) {
+        font-size: $fontSlideSize;
+        }
+        background: transparent !important;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    #bvcarousel,
+    #imgPanel {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .carousel-item,
+    .panelContent1 {
+        height: 800px;
+    }
+
+    .panelContent1 {
+        display: flex;
+        align-items: flex-end;
+        // @include backImg('../images/IMG-BVEA/heade-img.png');
+        .yellowDivider {
+            border: 2px solid $mainColor1;
+            width: 25%;
+        }
+
+        .container {
+            margin-bottom: 100px;
+        }
+
+        .degrade {
+            position: absolute;
+            display: flex;
+            align-items: flex-end;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: -moz-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1);
+            background: -webkit-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1);
+            background: linear-gradient(to top, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1);
+        }
+    }
+
+
+
+    .whoArU {
+        @include backImg('../images/IMG-BVEA/Groupe 291.png');
+    }
+
+    .ourActions {
+        @include backImg('../images/IMG-BVEA/Groupe 151.png'); 
+    }
+
+    .aid {
+        @include backImg('../images/IMG-BVEA/Groupe 234.png');
+    }
+    
+    .implementation {
+        @include backImg('../images/IMG-BVEA/Groupe 1.png');
+    }
+
+    .testimony {
+        background: url('../images/IMG-BVEA/Groupe 18.png');
+    }
+}
+
+
+.btnOutlineNavbar {
+    padding: 13px 23px;
+    border-radius: 30px;
+
+}
+
+.btnOutlineNavbar:hover {
+    background: $mainColor2 !important;
+    color: $mainColor1 !important;
+    border-color: $mainColor2 !important;
+}
+
+nav {
+    .nav-link:hover:not(.btn) {
+        color: black !important;
+    }
+    .all {
+        margin-right: 8%;
+        font-weight: bold;
+        .divider {
+            border: 1px solid black;
+            width: 80%;
+        }
+
+        a {
+            padding: 0 !important;
+            margin: 0 !important;
+            font-size: 1.5em;
+        }
+    }
+    .btnOutlineNavbar {
+        border-radius: 60px !important;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 12px 23px !important;
+    }
+    .btnNavbar {
+        border-radius: 60px !important;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 15px 25px !important;
+        color: $mainColor2 !important;
+        background: $mainColor1;
+    }
+
+    .btnNavbar:hover {
+        background: $mainColor2 !important;
+        color: white !important;
+    }
+
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+
+    .mega-menu {
+        background: rgb(214, 208, 208) !important;
+    }
+
+    .mega-menu:not(.clickable) {
+        padding: 20px !important;
+
+    }
+
+    .nav-link:not(.btn) {
+        height: 100% !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+    }
+
+    .nav-item.item {
+        height: $logoSize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item:hover {
+        color: black !important;
+    }
+
+    .agis {
+        color: $mainColor1 !important;
+    }
+
+    *:not(i) {
+        font-weight: normal !important;
+        font-size: 1.08em;
+    }
+
+    i {
+        font-size: 1.6em;
+    }
+
+    .navbar-brand {
+        img {
+            height: $logoSize;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        margin-left: 30px !important;
+    }
+
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: none !important;
+    background: transparent;
+
+    #navbarContent {
+        height: $logoSize;
+        // padding: 20px;
+        ul {
+            width: 90%;
+            display: flex;
+            justify-content: space-between
+        }
+
+        .nav-item {
+            width: 16.66% !important;
+        }
+
+    }
+
+    .btn-outline {
+        background: transparent !important;
+    }
+
+    .nav-link:hover:not(.toClick) {
+        background: rgb(214, 208, 208);
+    }
+
+    #menuId {
+        width: 75%;
+        position: absolute;
+        right: 0;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    .social-info a {
+        color: #252525;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .social-info a:last-child {
+        margin-right: 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .social-info a {
+            margin-right: 5px;
+            font-size: 12px;
+        }
+    }
+
+    .social-info a:hover,
+    .footer-content .social-info a:focus {
+        color: #fc6060;
+    }
+
+    
+}
+
+
+.bolder {
+    font-weight: bolder !important;
+}
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.color1 {
+    color: $mainColor1 !important;
+}
+
+.color2 {
+    color: $mainColor2 !important;
+}
+
+.back1 {
+    background: $mainColor1 !important;
+}
+
+.back2 {
+    border-color: $mainColor2 !important;
+    background: $mainColor2 !important;
+    color: white !important;
+}
+
+.back2::placeholder {
+    color: white !important;
+}
+
+.btn-de {
+    color: #fff !important;
+    font-size: 16px;
+    border: 1px solid #fff;
+}
+
+.btn-de:hover {
+    background: #fff !important;
+    font-size: 16px;
+    color: $mainColor2 !important;
+}
+
+.wBtn:hover {
+    background: $mainColor2;
+    color: white;
+}
+
+.wBtn {
+    color: $mainColor2;
+    background: white;
+    border-radius: 60px;
+}
+
+.v-divider {
+    height: 20px;
+    border-left: 1px solid white;
+}
+
+.dropdown {
+    position: static;
+
+    li {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+.dropdown:hover:not(.clickable) .dropdown-menu {
+    display: block;
+}
+
+.agisDrop {
+    .onglet1 {
+        height: 120px;
+        @include backImg('../images/IMG-BVEA/img-4.png');
+
+        div {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+            p {
+                color: white !important;
+                text-decoration: underline;
+                font-size: 0.8em;
+            }
+
+        }
+    }
+}
+
+div.clickable {
+    height: 280px;
+    padding: 0, 0, 40px, 0 !important;
+    margin: 0 !important;
+    * {
+        color: black !important;
+    }
+    ul {
+        list-style-type: none;
+    } 
+
+    position: relative;
+
+    .firstUl {
+        height: 275px;
+        background: white !important;
+        position: relative;
+        right: 10px;
+        bottom: 26px;
+
+        & > ul {
+            position: relative;
+        }
+
+    }
+
+    .secondUl {
+        position: absolute;
+  
+        right: 0px;
+        top: 20px;
+
+
+ 
+    }
+
+   .secondUl a, .firstUl a {
+        text-transform: none !important;
+        margin-bottom: 6px !important;
+        padding: 0px !important;
+        font-size: 20px;
+    }
+}
+
+.dropdown-menu {
+
+    background: rgb(214, 208, 208);
+    color: black !important;
+
+    .onglet {
+
+        * {
+            color: black !important;
+        }
+    }
+
+    .more {
+        color: grey;
+        font-size: 0.9em;
+        text-transform: lowercase;
+    }
+
+
+}
+
+.floatingBlue {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: $mainColor2 !important;
+
+    i {
+        color: white !important;
+        font-size: 0.8em !important;
+    }
+}
+
+.floatingBlue:hover{
+    border-radius: 100%;
+    * {
+        color: $mainColor2 !important;
+    }
+    background-color: #fff !important;
+}
+
+.yellowCard {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $mainColor1;
+
+    h5 {
+        font-size: 1em;
+        color: $mainColor2;
+    }
+
+    i {
+        color: white;
+        font-size: 2em;
+    }
+
+    a {
+        background-color: $mainColor2;
+    }
+
+
+    .floating {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        background-color: $mainColor2 !important;
+
+        i {
+            color: white !important;
+            font-size: 0.8em !important;
+        }
+    }
+}
+
+.blueCard {
+    background: $mainColor2;
+
+    * {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    i {
+        color: $mainColor1;
+        font-size: 2em;
+    }
+
+    .floating {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-color: white !important;
+
+        i {
+            color: $mainColor2 !important;
+            font-size: 1em !important;
+        }
+    }
+}
+
+#news {
+    padding: $sectionPadding;
+    @include backImg('../images/IMG-BVEA/img-3.png');
+    position: relative;
+
+    .img {
+        height: 400px;
+        padding: 0;
+        @include backImg('../images/IMG-BVEA/img-2.png');
+
+        .card-body {
+            @include degrade($mainColor1);
+        }
+    }
+
+    .cards {
+        z-index: 2;
+        position: absolute;
+        width: 70%;
+        left: 15%;
+        top: -25%;
+    }
+
+    .text {
+        padding-top: 22%;
+
+        h2 {
+            color: $mainColor1;
+            text-transform: uppercase;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .btn {
+            border-radius: 30px !important;
+            padding: 20px 50px !important;
+            color: $mainColor2;
+        }
+    }
+}
+
+#newsletter {
+    padding: $sectionPadding;
+    @include backImg('../images/IMG-BVEA/img-4.png');
+
+    form {
+        width: 100% !important;
+    }
+
+    input {
+        background: transparent;
+        color: white;
+        padding-left: 3%;
+        height: 60px;
+        width: 70%;
+        border: 2px solid white;
+        border-right: none;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    input::placeholder {
+        color: white !important;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    button {
+        height: 60px;
+        width: 30%;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+#actions {
+    z-index: 2;
+    padding: $sectionPadding;
+    background: white;
+
+    .card {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        position: absolute;
+        width: 100% !important;
+        height: 100% !important;
+        background: -moz-linear-gradient(bottom, #ffe600, 5%, transparent);
+        background: -webkit-linear-gradient(bottom, #ffe600, 5%, transparent);
+        background: linear-gradient(to top, #ffe600, 5%, transparent);
+    }
+
+    .action .cards .content {
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-left: 20px;
+        padding-right: 5%;
+        font-weight: bolder;
+        color: #fff;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        @include degrade($mainColor1);
+    }
+
+    .action1 {
+        @include backImg('../images/IMG-BVEA/img0.png');
+    }
+
+    .action2 {
+        @include backImg('../images/IMG-BVEA/img0.png');
+    }
+
+    .action3 {
+        @include backImg('../images/IMG-BVEA/img0.png');
+    }
+
+}
+
+#team {
+
+    padding: $sectionPadding;
+    @include backImg('../images/IMG-BVEA/Composant.png');
+
+    .wBtn {
+        height: 60px;
+        width: 25%;
+    }
+    input {
+        height: 60px;
+        width: 90%;
+        border: 2px solid white;
+        border-right: none;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    input::placeholder {
+        color: black;
+        font-size: 1em;
+    }
+
+    .prepend {
+        background: white;
+        height: 60px;
+        width: 10%;
+        border: 1px solid white;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+
+        i {
+            font-size: 2em;
+            color: #6989a6;
+        }
+    }
+}
+
+#forfaits {
+    padding: $sectionPadding;
+    background: white;
+
+    .card {
+        position: relative;
+        margin: 8px;
+        height: 400px;
+        padding: 0;
+    }
+
+    .card-body {
+        @include degrade;
+        color: white;
+        font-weight: bolder;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        position: absolute;
+        top: 5%;
+        font-weight: bold;
+        border-radius: 50px !important;
+        padding: 15px 20px !important;
+        text-transform: uppercase;
+        background: $mainColor2;
+        color: white;
+    }
+
+    .btn:hover {
+        text-transform: uppercase;
+        background: #fff;
+        color: $mainColor2;
+      }
+
+    .action1 {
+        @include backImg('../images/IMG-BVEA/Groupe 48.png');
+    }
+
+    .action2 {
+        @include backImg('../images/IMG-BVEA/Groupe 50.png');
+    }
+
+    .action3 {
+        @include backImg('../images/IMG-BVEA/img10.png');
+    }
+}
+
+#payment {
+    $height: 70px;
+    padding: $sectionPadding;
+    background: #4d4d4d;
+
+    form {
+        width: 100% !important;
+    }
+
+    h4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        background: transparent;
+        color: white;
+        padding-left: 3%;
+        height: $height;
+        width: 40%;
+        border: 2px solid white;
+        border-right: none;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    input::placeholder {
+        color: white !important;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    button {
+        background: $mainColor1;
+        border: 1px solid $mainColor1;
+        height: $height;
+        width: 20%;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+.grayDivider {
+    border: 1px solid gray;
+    width: 50%;
+}
+
+.bg-footer {
+    background-color: #faf6f6;
+}
+
+
+.mycard {
+    margin: 5%;
+    padding: 5%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        h3 {
+            font-size: 1.05em;
+            font-weight: bolder;
+        }
+        font-size: 2.5em;
+        font-weight: bolder;
+    }
+
+    .btn {
+        width: 50%;
+        border-radius: 60px;
+    }
+}
+
+//page Qui sommes-nous ?
+.textCard {
+    margin: auto 30px;
+    p {
+        font-size: 1.2em;
+    }
+}
+
+#visions {
+    .c1 {
+        @include backImg('../images/IMG-BVEA/Groupe 317.png');
+    }
+    .c2 {
+        @include backImg('../images/IMG-BVEA/Groupe 321.png');
+    }
+}
+
+.imgCard {
+    height: 300px;
+    width: 91%;
+    margin: auto 8%;
+    color: white;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 4%;
+        @include degrade($mainColor2);
+    }
+}
+
+.c1 {
+    @include backImg('../images/IMG-BVEA/img-2.png');
+}
+
+.line {
+    margin-top: 60px;
+}
+
+
+#chiffres {
+    *:not(.titre1) {
+        color: white;
+    }
+    background: $mainColor2;
+}
+
+#axesAction {
+    padding-bottom: 500px;
+    .mycard {
+        height: 320px;
+        position: relative;
+        div {
+            @include myCardDegrade(rgb(95, 89, 89));
+        }
+        ul {
+            padding-left: 10% !important;
+        }
+
+        p {
+            font-size: 1em;
+        }
+        
+        *:not(.btn) {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .one {
+        @include backImg('../images/IMG-BVEA/Groupe 348.png')
+    }
+    .two {
+        @include backImg('../images/IMG-BVEA/Groupe 349.png')
+    }
+    .three {
+        @include backImg('../images/IMG-BVEA/Groupe 348.png')
+    }
+    .four {
+        @include backImg('../images/IMG-BVEA/Groupe 349.png')
+    }
+
+}
+
+
+#dates {
+    position: relative;
+    height: 200px;
+    background: rgb(226, 223, 223);
+    .wrapper {
+        width: 60%;
+        position: absolute;
+        left: 20%;
+        top: -260px;
+        .card {
+            position: relative;
+            height: 600px !important;
+            .raye {
+                display: flex;
+                justify-content: space-between;
+                .bande {
+                    opacity: 0.6;
+                    width: 9.6%;
+                    height: 100%;
+                }
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 90%;
+                height: 100%;
+                @include backImg('../images/IMG-BVEA/heade-img.png');
+            }
+        }
+    }
+
+}
+
+.international {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: flex-end;
+    .bCard {
+        height: 690px;
+
+
+        position: relative;
+        width: 70%;
+        @include backImg('../images/IMG-BVEA/heade-img.png');
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .yellow {
+            padding: 5%;
+            position: absolute;
+            top: 50px;
+            left: -40%;
+            width: 90%;
+            height: 590px;
+
+        }
+
+        .button {
+            width: 40%;
+            border-radius: 40px;
+            border-color: $mainColor2 !important;
+            color: $mainColor2 !important;
+        }
+
+        .button:hover {
+            color: $mainColor1 !important;
+        }
+    }
+
+}
+
+#organisation {
+    padding-top: 350px;
+    .mycard {
+        div {
+            @include myCardDegrade(rgb(73, 69, 69));            
+        }
+        p {
+            font-size: 1.1em;
+        }
+
+        .btn {
+            width: 80% !important;
+        }
+        height: 450px;
+        padding-bottom: 3% !important;
+        padding-left: 3% !important;
+        display: flex;
+        margin: 2%;
+        .btn {
+            width: 90%;
+        }
+    }
+    .one {
+        @include backImg('../images/IMG-BVEA/Groupe 331.png');
+    }
+
+    .two {
+        @include backImg('../images/IMG-BVEA/Groupe 333.png');
+    }
+
+    .three {
+        @include backImg('../images/IMG-BVEA/Groupe 335.png');
+    }
+
+    
+
+
+    .readMoreLink {
+        font-size: 1.4em;
+    }
+}
+
+#ressources {
+    background: #e6e6e6;
+    padding-bottom: 100px;
+    .line {
+        border-bottom: 1px solid black;
+    }
+
+}
+
+section {
+    padding: 50px 50px;
+}
+
+
+//OurActions
+
+#ourActions {
+    .c1 {
+        @include backImg('../images/IMG-BVEA/Groupe 317.png');
+    }
+    .c2 {
+        @include backImg('../images/IMG-BVEA/Groupe 17.png');
+    }
+    .c3 {
+        @include backImg('../images/IMG-BVEA/Groupe 26.png');
+    }
+
+    .aidCard.c4 {
+        @include backImg('../images/IMG-BVEA/Groupe 349.png');
+    }
+
+    .c5 {
+        @include backImg('../images/IMG-BVEA/Groupe 29.png');
+    }
+
+    .c6 {
+        @include backImg('../images/IMG-BVEA/Groupe 31.png');
+    }
+
+    .c7 {
+        @include backImg('../images/IMG-BVEA/Groupe 35.png');
+    }
+}
+.listenGray {
+    background: #4d4d4d;
+    *:not(.color1) {
+        color: white !important;
+    }
+}
+
+.listenLightGrey {
+    background: #f2f2f2;
+}
+
+.listenGray, .listenWhite {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+
+    .btn {
+        width: 50% !important;
+    }
+
+}
+
+.listenGray {
+    .wBtn {
+        background: transparent !important;
+        border:1px solid white !important;
+    }
+
+    .wBtn:hover {
+        color: $mainColor1 !important;
+        background: $mainColor2 !important;
+        border-color: $mainColor2 !important;
+    }
+}
+
+
+//nous soutenir
+
+.wB {
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 50px;
+    color: white;
+}
+
+#newsletter .btns {
+    .wB {
+        height: 50px;
+        width: 40%;
+    }
+
+    .wBtn {
+        height: 50px;
+        width: 25%;
+    }
+}
+
+.wB:hover {
+    color: $mainColor2;
+    background: white;
+    font-weight: bold;
+}
+
+
+.aidCard {
+    
+    position: relative;
+    padding: 5%;
+    width: 80%;
+    height: 500px;
+    margin-top: 80px;
+    color: white;
+    
+    .content {
+        padding-left: 2%;
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .whiteDivider {
+        width: 50%;
+        border: 0.5px solid gray;
+    }
+
+   
+
+
+    .aidMore.two {
+        height: 400px;
+    }
+
+
+    .aidMore {
+        position: absolute;
+        right:  -15%;
+        top: -40px;
+        height: 500px;
+        width: 42%;
+
+        .tHeight {
+            height: 100%;
+            
+        }
+
+        input {
+            padding-left: 8%;
+            background: transparent;
+            border: 1px solid white;    
+            height: 50px; 
+        }
+
+        input::placeholder {
+            color: white;
+        }
+        .inputLg {
+            border-radius: 25px;
+            width: 100%;
+        }
+
+        .miLg {
+            width: 70%;
+            border-top-left-radius: 25px; 
+            border-bottom-left-radius: 25px; 
+            border-right: none;
+        }
+
+        .afterInput {
+            padding-right: 8%;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 50px;
+            border: 1px solid white;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-left: none;
+        }
+        
+        .half {
+            padding: 6%;            
+            .row {
+                margin-left: 3%;
+                width: 94%;
+            }
+            height: 50%;
+        }
+
+        .yellowBtn {
+            margin-left: 10%;
+            background: $mainColor1;
+            border: 1px solid $mainColor1;
+            color: $mainColor2;
+            width: 80%;
+            border-radius: 25px;
+            width: 80%;
+            height: 35px;
+        }
+
+        .third {
+            padding: 6%;
+
+            height: 33%;
+        }
+
+        .tThirds {
+            padding: 6%;
+            height: 77%;
+        }
+    }
+
+    .choice {
+        cursor: pointer;
+        height: 40px; 
+        color: $mainColor2;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bgWhite {
+        background: white !important;
+    }
+}
+
+.aidCard.one {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 260.png');
+}
+
+.aidCard.two {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 270.png');
+}
+
+.aidCard.three {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 265.png'); 
+}
+
+.aidCard.four {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 279.png'); 
+
+}
+
+.aidCard.five { 
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 232.png'); 
+
+}
+
+.aidC1 {
+    background-image: linear-gradient(to top, rgba(30, 30, 32, 0.52), transparent), url('../images/IMG-BVEA/Groupe 246.png'); 
+}
+
+.trust {
+    width: 96%;
+    margin-left: 2%;
+    padding: 10px 30px 30px 30px;
+    background: rgb(247, 239, 239) !important;
+}
+
+
+.bottomHeader {
+    position: relative;
+    bottom: 60px;
+    background: rgba(43, 43, 43, 0.5);
+    height: 60px !important; 
+    a {
+        font-size: 1.1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px !important;
+        color: white;
+    }
+
+    a:hover {
+        color: $mainColor1;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+
+//one article
+
+
+#article {
+    * {
+        background-size: cover !important;
+    }
+
+    .articleImg {
+        height: 500px;
+        width: 100%;
+    }
+
+    .article {
+        padding: 15px;
+    }
+
+    .latest {
+        background: rgb(255, 243, 243);
+        width: 94%;
+        margin-left: 3%;
+        padding-bottom: 80px;
+        border-bottom-right-radius: 100px;
+        .title {
+            height: 50px;
+            width: 100%;
+            background: rgb(72, 163, 199);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        .more {
+            font-weight: 400;
+        }
+
+        .seeAllBtn {
+            border-radius: 25px;
+            width: 70%;
+        }
+    }
+
+    .divider {
+        border: 0.5px solid rgb(180, 178, 178);
+    }
+}
+
+
+// actualites
+
+#aLaUne {
+    padding: 100px 0px;
+    * {
+        background-size: cover !important;
+    }
+
+    .btnOutlineNavbar {
+        // padding: 13px 60px;
+        width: 40%;
+    }
+
+    .height {
+        height: 500px;
+    }
+    .aLaUne2, .aLaUne3 {
+        height: 240px;
+        width: 100%;
+    }
+
+    div[class^="aLaUne"] {
+        padding: 2% 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.totalRadius {
+    border-radius: 60px !important;
+}
+
+input.totalRadius {
+    border: 2px solid white !important;
+    width: 80% !important;
+    padding-left: 4% !important;
+
+    &::placeholder {
+        font-size: 1.3em !important;
+    }
+}
+
+select#filtre {
+    // text-align: center;
+    height: 60px;
+    padding-left: 8%;
+    option {
+        text-align: center;
+    }
+    background: white;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+#temoignages {
+    background: $mainColor1;
+   
+    .newsCard {
+        background: white;
+    }
+
+    h2:not(.titre1) {
+        font-size: 1.1em;
+    }
+
+    .blueBtn {
+
+        padding-top: 15px; 
+        padding-bottom: 15px; 
+        text-transform: uppercase;
+        width: 40%;
+    }
+} 
+#followUs {
+    background: white;
+
+    a {
+        background: $mainColor2;
+        height: 80px; 
+        width: 80px;
+        padding: 25px;
+        i {
+            font-size: 30px;
+            color: white;
+        }
+        background: white;
+
+        &:hover {
+            i {
+                color: $mainColor2;
+            }
+        }
+    }
+
+
+}
+
+#moreNews {
+    .guide {
+        a:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+
+#contactezNous {
+
+    .panelContent1 {
+
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    height: 1200px;
+    background: #F2F2F2;
+    // height: 500px;
+    position: relative;
+    input {
+        border-radius: 25px;
+    }
+
+    textarea {
+        border-radius: 5px;
+    }
+
+    .wrapper {
+        box-shadow: 0px 0px 1px gray;
+        padding: 5%;
+        background: white;
+        position: absolute;
+        left: 10%;
+        top: -5%;
+        width: 80% !important;
+
+    }
+}
+
+
+.contactUs {
+    align-items: center !important;
+    background-size: cover !important;
+    background: -moz-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1), url('../images/IMG-BVEA/Groupe 31.png');
+    background: -webkit-linear-gradient(bottom, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1), url('../images/IMG-BVEA/Groupe 31.png');
+    background: linear-gradient(to top, rgb(143, 138, 138), 15%, transparent, 90%, $mainColor1), url('../images/IMG-BVEA/Groupe 31.png');
+}
+
+
+#implementations {
+
+    .yellow {
+        height: 80% !important;
+        width: 70% !important;
+    }
+
+    .wB {
+        &:hover {
+            border-color: white;
+        }
+
+        border: 1px solid $mainColor2;
+        color: $mainColor2;
+    }
+
+
+
+    .trust {
+        background: #F2F2F2 !important;
+        .title {
+            font-size: 1.3em;
+        }
+    }
+
+    .trustGroup {
+        margin-top: 100px !important;
+
+        &:last-of-type {
+            margin-top: 200px !important;
+        }
+    }
+
+
+    .bCard {
+        background: url('../images/IMG-BVEA/Groupe 16.png');
+    }
+
+    
+}
+
+#temoignage {
+    .aLaUne1 {
+        background: url('../images/IMG-BVEA/Groupe 18.png');
+    }
+
+    .aLaUne2 {
+        background: url('../images/IMG-BVEA/Groupe 20.png');
+    }
+
+    .aLaUne3 {
+        background: url('../images/IMG-BVEA/Groupe 22.png');
+    }
+
+    
+}
